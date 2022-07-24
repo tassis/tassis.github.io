@@ -1,0 +1,1 @@
+import{S as e,i as n,s as a}from"../../../chunks/index-235fdfd5.js";const c=async({fetch:t,params:s})=>({});function o(t){return[]}class u extends e{constructor(s){super(),n(this,s,o,null,a,{})}}export{u as default,c as load};
