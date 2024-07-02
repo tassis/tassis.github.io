@@ -1,0 +1,1 @@
+{"type":"data","nodes":[{"type":"data","data":[{"config":1},{"title":2},"Saweibot 資料查詢"],"uses":{"dependencies":["http://sveltekit-prerender/api/config"]}},{"type":"data","data":[{"chats":1},[2],{"chat_id":3,"chat_name":4},"-1001470287738","股癌加密薯條"],"uses":{"dependencies":["https://api.saweicore.com/peon/dataview/chats"]}}]}
