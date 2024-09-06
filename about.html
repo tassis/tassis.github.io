@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="./_app/immutable/assets/0.fab26a04.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/4.eb692091.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.d9654927.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.1d3ba086.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.1b5bcb64.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.31992b03.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.db9e2c85.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/4.725e64ab.js"><title>關於 PeonBot</title><!-- HEAD_svelte-mrkvkn_START --><!-- HEAD_svelte-mrkvkn_END --><!-- HEAD_svelte-1txarrm_START --><!-- HEAD_svelte-1txarrm_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+
+
+
+<nav class="flex fixed w-full navbar svelte-kulw02"><div class="flex h-full nav-container items-center align-middle svelte-kulw02"><div class="text-xl logo svelte-kulw02"><a href="/">Saweibot 資料查詢</a></div>
+        
+        <div class="grow"></div>
+
+        <nav class="nav-links svelte-kulw02"><div class="nav-item"><a href="/about" class="svelte-kulw02">關於機器人</a></div></nav></div>
+</nav>
+<div class="pt-20 px-4 main-wrapper svelte-1vg91fs">
+
+<div class="about-wrapper svelte-1kcdtww"><!-- HTML_TAG_START --><h1 id="關於-peonbot">關於 PeonBot</h1>
+<p>PeonBot 為實驗型整地機器人，透過一連串機制設計增加 [<strong>廣告機器人</strong>] 及 [<strong>亂群人士</strong>] 的攻擊成本，保持群組訊息的整潔，並透過配套的查詢頁面協助管理員清理亂源。</p>
+<h2 id="核心功能">核心功能</h2>
+<ul>
+<li>發言權限驗證 （預設鎖定及刪除除管理員外所有成員的貼圖、錄影、轉發權限，需發言到達一定次數才可解鎖）</li>
+<li>網址黑名單 （針對特定網址自動進行刪除）</li>
+<li>記錄查詢  （透過網頁查詢群組內成員的發言點數、被刪除的訊息。）</li>
+</ul>
+<p><em>TIPS</em>: </p>
+<ul>
+<li>發言點數每五分鐘結算一次，因此剛到達標準並不會馬上解鎖權限。</li>
+<li>台灣時間每天晚上 11 點自動清除「14日內未曾發言且發言點數小於 21 點」的點數記錄，需要重新累積。</li>
+<li>機器人目前沒有踢人功能。</li>
+</ul>
+<h2 id="可用指令">可用指令</h2>
+<p>指令分為一般使用者及管理員兩部份。</p>
+<p><strong>一般使用者:</strong></p>
+<ul>
+<li>$point 用於查詢當前的發言點數</li>
+</ul>
+<p><strong>管理員:</strong></p>
+<ul>
+<li>$setlevel 配合 reply 使用，用於設置成員的權限等級 (none | jr | sr) 當設置為 jr 以上時會解鎖貼圖權限。</li>
+<li>$query 配合查詢頁面使用，用於查詢因改名字而找不到的成員。</li>
+<li>$save 配合 Reply 使用，將 reply 的訊息記錄進資料庫，方便分析如何阻擋。</li>
+</ul>
+<h2 id="輔助網站（本網站）">輔助網站（本網站）</h2>
+<p>網站每 2 小時刷新一次，用於檢視群組內部的點數變化及攔截、刪除的訊息。</p>
+<h2 id="關於協助機器人運作">關於協助機器人運作</h2>
+<p>機器人的運行成本包含 VPS 的月費及 DOMAIN 的年費。如果有興趣協助機器人的運作，有以下兩個管道可使用：(點圖可顯示原大小)</p>
+<details>
+    <summary>Binance 錢包</summary>
+    <div class="flex flex-col sm:flex-row">
+        <div class="flex-1 wallet-box">
+            <a href="https://media.saweicore.com/common/BINANCE-WALLET.jpg" target="_blank">
+                <img src="https://media.saweicore.com/common/BINANCE-WALLET.jpg" loading="lazy" style="width:300px"/>
+            </a>
+        </div>
+        <div class="flex-1 text-ellipsis">
+            <section class="p-5" style="padding: 0 1rem;">
+                <strong>幣安交易所的錢包</strong>
+                <p>幣安ID: 403638280</p>
+                <p>可接受所有幣安支援的幣種</p>
+            </section>
+        </div>
+    </div>
+</details>
+
+
+<details>
+    <summary>Cardano 錢包</summary>
+    <div class="flex flex-col sm:flex-row">
+        <div class="flex-1 wallet-box">
+            <a href="https://media.saweicore.com/common/ADA-WALLET.jpg" target="_blank">
+                <img src="https://media.saweicore.com/common/ADA-WALLET.jpg" loading="lazy" style="width:300px"/>
+            </a>
+        </div>
+        <div class="flex-1 text-ellipsis">
+            <section class="p-5" style="padding: 0 1rem;">
+                <strong>Cardano 區塊鏈上的錢包地址：</strong>
+                <p class="break-all" style="word-break: break-all; padding: 0 0.5rem;">
+                    addr1q9tftn49hj9etv4xddeaxd6w69qmt5h3wqhfmt6s3x5pv0t00vhntt5d44nytqj8uhre7vmkkm6q6f9j7lguqz8tfp7q4f70d3
+                </p>
+                <p>此錢包目前只能接受 ADA 轉帳。</p>
+            </section>
+        </div>
+    </div>
+</details>
+
+<!-- HTML_TAG_END -->
+</div></div>
+<footer class="w-full pt-20 pb-5 site-footer"><div class="flex justify-center items-center px-10 h-full footer-container"><div class="copyright">Copyright © 2020 - 2024 SaweiCore Lab All Rights Reserved.</div></div></footer>
+
+
+			
+			<script>
+				{
+					__sveltekit_19lxndk = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [{"type":"data","data":{config:{title:"Saweibot 資料查詢"}},"uses":{}},{"type":"data","data":{metadata:{title:"關於 PeonBot",created:"2024-09-06T02:36:53.673Z"},content:"\u003Ch1 id=\"關於-peonbot\">關於 PeonBot\u003C/h1>\n\u003Cp>PeonBot 為實驗型整地機器人，透過一連串機制設計增加 [\u003Cstrong>廣告機器人\u003C/strong>] 及 [\u003Cstrong>亂群人士\u003C/strong>] 的攻擊成本，保持群組訊息的整潔，並透過配套的查詢頁面協助管理員清理亂源。\u003C/p>\n\u003Ch2 id=\"核心功能\">核心功能\u003C/h2>\n\u003Cul>\n\u003Cli>發言權限驗證 （預設鎖定及刪除除管理員外所有成員的貼圖、錄影、轉發權限，需發言到達一定次數才可解鎖）\u003C/li>\n\u003Cli>網址黑名單 （針對特定網址自動進行刪除）\u003C/li>\n\u003Cli>記錄查詢  （透過網頁查詢群組內成員的發言點數、被刪除的訊息。）\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cem>TIPS\u003C/em>: \u003C/p>\n\u003Cul>\n\u003Cli>發言點數每五分鐘結算一次，因此剛到達標準並不會馬上解鎖權限。\u003C/li>\n\u003Cli>台灣時間每天晚上 11 點自動清除「14日內未曾發言且發言點數小於 21 點」的點數記錄，需要重新累積。\u003C/li>\n\u003Cli>機器人目前沒有踢人功能。\u003C/li>\n\u003C/ul>\n\u003Ch2 id=\"可用指令\">可用指令\u003C/h2>\n\u003Cp>指令分為一般使用者及管理員兩部份。\u003C/p>\n\u003Cp>\u003Cstrong>一般使用者:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>$point 用於查詢當前的發言點數\u003C/li>\n\u003C/ul>\n\u003Cp>\u003Cstrong>管理員:\u003C/strong>\u003C/p>\n\u003Cul>\n\u003Cli>$setlevel 配合 reply 使用，用於設置成員的權限等級 (none | jr | sr) 當設置為 jr 以上時會解鎖貼圖權限。\u003C/li>\n\u003Cli>$query 配合查詢頁面使用，用於查詢因改名字而找不到的成員。\u003C/li>\n\u003Cli>$save 配合 Reply 使用，將 reply 的訊息記錄進資料庫，方便分析如何阻擋。\u003C/li>\n\u003C/ul>\n\u003Ch2 id=\"輔助網站（本網站）\">輔助網站（本網站）\u003C/h2>\n\u003Cp>網站每 2 小時刷新一次，用於檢視群組內部的點數變化及攔截、刪除的訊息。\u003C/p>\n\u003Ch2 id=\"關於協助機器人運作\">關於協助機器人運作\u003C/h2>\n\u003Cp>機器人的運行成本包含 VPS 的月費及 DOMAIN 的年費。如果有興趣協助機器人的運作，有以下兩個管道可使用：(點圖可顯示原大小)\u003C/p>\n\u003Cdetails>\n    \u003Csummary>Binance 錢包\u003C/summary>\n    \u003Cdiv class=\"flex flex-col sm:flex-row\">\n        \u003Cdiv class=\"flex-1 wallet-box\">\n            \u003Ca href=\"https://media.saweicore.com/common/BINANCE-WALLET.jpg\" target=\"_blank\">\n                \u003Cimg src=\"https://media.saweicore.com/common/BINANCE-WALLET.jpg\" loading=\"lazy\" style=\"width:300px\"/>\n            \u003C/a>\n        \u003C/div>\n        \u003Cdiv class=\"flex-1 text-ellipsis\">\n            \u003Csection class=\"p-5\" style=\"padding: 0 1rem;\">\n                \u003Cstrong>幣安交易所的錢包\u003C/strong>\n                \u003Cp>幣安ID: 403638280\u003C/p>\n                \u003Cp>可接受所有幣安支援的幣種\u003C/p>\n            \u003C/section>\n        \u003C/div>\n    \u003C/div>\n\u003C/details>\n\n\n\u003Cdetails>\n    \u003Csummary>Cardano 錢包\u003C/summary>\n    \u003Cdiv class=\"flex flex-col sm:flex-row\">\n        \u003Cdiv class=\"flex-1 wallet-box\">\n            \u003Ca href=\"https://media.saweicore.com/common/ADA-WALLET.jpg\" target=\"_blank\">\n                \u003Cimg src=\"https://media.saweicore.com/common/ADA-WALLET.jpg\" loading=\"lazy\" style=\"width:300px\"/>\n            \u003C/a>\n        \u003C/div>\n        \u003Cdiv class=\"flex-1 text-ellipsis\">\n            \u003Csection class=\"p-5\" style=\"padding: 0 1rem;\">\n                \u003Cstrong>Cardano 區塊鏈上的錢包地址：\u003C/strong>\n                \u003Cp class=\"break-all\" style=\"word-break: break-all; padding: 0 0.5rem;\">\n                    addr1q9tftn49hj9etv4xddeaxd6w69qmt5h3wqhfmt6s3x5pv0t00vhntt5d44nytqj8uhre7vmkkm6q6f9j7lguqz8tfp7q4f70d3\n                \u003C/p>\n                \u003Cp>此錢包目前只能接受 ADA 轉帳。\u003C/p>\n            \u003C/section>\n        \u003C/div>\n    \u003C/div>\n\u003C/details>\n\n",slugKey:"about",headings:[{depth:1,text:"關於 PeonBot",raw:"# 關於 PeonBot\n\n",id:"關於-peonbot"},{depth:2,text:"核心功能",raw:"## 核心功能\n\n",id:"核心功能"},{depth:2,text:"可用指令",raw:"## 可用指令\n\n",id:"可用指令"},{depth:2,text:"輔助網站（本網站）",raw:"## 輔助網站（本網站）\n\n",id:"輔助網站（本網站）"},{depth:2,text:"關於協助機器人運作",raw:"## 關於協助機器人運作\n\n",id:"關於協助機器人運作"}]},"uses":{}}];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.d9654927.js"),
+						import("./_app/immutable/entry/app.31992b03.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
